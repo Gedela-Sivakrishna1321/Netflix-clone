@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("./images/IN-en-20230911-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-size: cover;
+    box-shadow:  250px 250px 250px 280px rgba(0, 0, 0, 0.4) inset;
+    border-bottom: 10px solid #333;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+.nav img {
+    height: 40px;
+    width: 150px;
+}
+
+.buttons {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-right: 2rem; */
+}
+
+.signbtn {
+    /* height: 32px; */
+    /* width: 76px; */
+    /* width: 100%; */
+    padding: 6px 16px;
+    background: #E50914;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+#language {
+    font-weight: 500;
+    /* height: 32px; */
+    /* width: 126px; */
+    font-size: 1rem;
+    padding: 8px 36px;
+    color: white;
+    border-radius: 0.25rem;
+    background: transparent;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+
+.title {
+    width: 90%;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.header-content p {
+    margin: 16px 0 0;
+    font-size: 24px;
+}
+
+.header-content .p2 {
+    font-size: 20px;
+}
+
+
+/* input box  */
+.input {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.input > input {
+    padding: 24px 16px 8px;
+    border-radius: 4px;
+    flex: 1;
+    font-size: 20px;
+    outline: none;
+    margin-right: 2px;
+}
+
+.input > button {
+    border-radius: 4px;
+    color: white;
+    background: #E50914;
+    font-size: 24px;
+    padding: 12px 24px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.right-symbl {
+    margin-left: 8px;
+}
+
+/* case 1  */
+.case {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 32px 0;
+}
+
+.case1 {
+    border-bottom: 10px solid #333;
+}
+
+.text-box h1 {
+    font-size: 38px;
+}
+
+.text-box p {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.image-box {
+    position: relative;
+    z-index: 1;
+}
+
+.case-animation {
+    position: absolute;
+    top: 95px;
+    left: 75px;
+    z-index: -1;
+}
+
+.case3 .case-animation {
+    width: 395px;
+    height: 225px;
+    top: 50px;
+    left: 120px;
+}
+
+/* faq */
+.faq {
+    border-bottom: 10px solid #333;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+    line-height: 1.5;
+}
+
+.faq ul {
+    width: 70%;
+    margin: auto;
+}
+
+.faq-list h1 {
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.faq-list h2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.faq-list li {
+    background: #333;
+    border: 5px solid #000;
+    cursor: pointer;
+}
+
+.faq-list li > p {
+    padding: 1.5rem;
+    font-size: 1.3rem;
+    border-top: 1px solid #000;
+    visibility: hidden;
+    max-height: 0;
+    position: absolute;
+    transition: max-height 0.1s ease-in;
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.email-form p {
+    font-size: 20px;
+}
+
+/* Show FAQ Answers */
+.faq-list li.show p {
+    visibility: visible;
+    position: relative;
+    max-height: 700px;
+}
+
+/* Turn the Plus symbol by 45 degree */
+.faq-list li.show i {
+    transform: rotate(45deg);
+}
+
+/* footer styling  */
+footer {
+    color: #757575;
+    margin: 3rem auto;
+    width: 70%;
+}
+
+footer .links > * {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin-bottom: 2rem;
+}
+
+footer .links ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+}
+
+/* footer .language {
+    padding: 1rem 0;
+    font-weight: 700;
+    cursor: pointer;
+    width: 14%;
+    border: 1px solid #333;
+    border-radius: 0.2rem;
+    padding: 1rem;
+    position: relative;
+}
+
+footer .language:active {
+    outline: 1px solid #fff;
+    box-shadow: 0 0 0 2px #fff;
+} */
+
+/* footer .dropdown-list {
+    width: 100%;
+} */
+
+/* footer .dropdown-list ul {
+    display: none;
+    position: absolute;
+    background: #000;
+    border: 1px solid #333;
+    top: 58px;
+    width: 100%;
+    left: 0;
+}
+
+footer .dropdown-list li {
+    margin: 0.5rem 0;
+} */
+
+/* show dropdown list */
+/* footer #dropdown-list ul.show {
+    display: block;
+} */
+
+/* Let's start media queries  */
+@media (max-width : 1116px) {
+
+    /* Get started Navbar */
+    .nav {
+        width: 90%;
+    }
+
+    .case {
+        width: 100%; 
+    }
+
+    .case1, .case3 {
+        padding: 0 10px;
+    }
+
+    .case4 img, .case2 img {
+        height: 385px;
+        width: 511px;
+    }
+}   
+
+@media (max-width : 995px) {
+    .input {
+        width: 60%;
+    }
+}
+
+@media (max-width : 885px) {
+    .case {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+
+     h1, .case h1 {
+        font-size: 32px;
+    }
+
+    .text-box {
+        text-align: center;
+    }
+
+    .case2, .case4 {
+        flex-direction: column-reverse;
+    }
+
+    .input {
+        width: 70%;
+    }
+
+    .header-content p, .case p {
+        font-size: 18px;
+    }
+
+    .header img {
+        height: 28px;
+        width: 90px;
+    }
+
+    .buttons {
+        width: 40%;
+    }
+}
+
+@media (max-width : 750px ) {
+    .header h1 {
+        width: 85%;
+    }
+}
+
+@media (max-width : 705px) {
+    .input {
+        width: 90%;
+    }
+    .buttons {
+        width: 50%;
+    }
+    .header-content .p2, .email-form p {
+        font-size: 18px;
+    }
+    
+}
+
+@media (max-width : 560px) {
+    /* .buttons {
+        flex-direction: column;
+    } */
+}

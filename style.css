@@ -230,11 +230,13 @@ ul {
     visibility: visible;
     position: relative;
     max-height: 700px;
+    transition: ease-out .7s ;
 }
 
 /* Turn the Plus symbol by 45 degree */
 .faq-list li.show i {
     transform: rotate(45deg);
+    
 }
 
 /* footer styling  */
